@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Page demo 1</title>
+  <style>
+    /* reset css */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #efefef;
+      color: #000000;
+    }
+
+    section {
+      height: 100vh;
+      /*100% of the viewport Hight */
+    }
+
+    #s1 {
+      background-image: url("bg 1.jpg");
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 1rem;
+    }
+
+    #leftcol {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .logoarea {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      justify-content: center;
+    }
+
+    #logo {
+      font-size: 2rem;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-family: sans-serif;
+      font-weight: lighter;
+      text-align: center;
+
+    }
+
+    h1>span {
+      font-weight: bold;
+    }
+
+    .btnarea {
+      display: flex;
+      justify-content: center;
+      padding: 5rem 0;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: white;
+      font-weight: 3rem;
+      padding: 1rem 2rem;
+      display: block;
+      width: 200px;
+      text-align: center;
+      border-radius: 2rem;
+    }
+
+    #s2 {
+      display: grid;
+      place-items: center;
+    }
+
+    #s2 h2 {
+      text-align: center;
+      color: rgb(17, 0, 255);
+      font-size: 3.5rem;
+      font-family: sans-serif;
+    }
+
+    .services {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .svc_card {
+      background-color: blue;
+      color: aliceblue;
+      border-radius: 10px;
+      padding: 2rem;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-family: sans-serif;
+    }
+
+    .svc_card>p {
+      font-size: 1.5rem;
+    }
+
+    .svc_card>h3 {
+      font-size: 2rem;
+    }
+
+    .svc_card>.icon {
+      display: block;
+      filter: invert(1);
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    #s3 {
+      /* display: grid; */
+      padding: 80px;
+
+    }
+
+    .container3 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .photo {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      flex-wrap: none;
+    }
+
+    .content {
+      justify-content: center;
+      background-color: orangered;
+      padding: 3rem;
+    }
+
+    .content>h2 {
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      color: yellow;
+    }
+
+    .content>p {
+      font-family: sans-serif;
+      font-size: 1.3rem;
+      padding: 30px 0px;
+    }
+
+    .photo1,
+    .photo2 {
+      /* background-color: azure; */
+      border-radius: 14px;
+    }
+
+    .photo1 {
+      padding-bottom: 3rem;
+    }
+
+    .photo2 {
+      padding-top: 6rem;
+    }
+    #s4{
+      justify-content: center;
+      background-color: rgb(8, 174, 171);
+      display: flex;
+      flex-direction: column;
+    }
+    #s4>p{
+      color: rgb(255, 255, 255); 
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+    }
+    .para>p{
+      text-align: center;
+      font-family: sans-serif;
+      color: rgb(255, 255, 255);
+      padding: 0,20px,0,20px;
+      font-size: 1.5rem; 
+    }
+    .para{
+      padding-left: 100px;
+      padding-right: 100px;   
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="s1">
+      <div class="container">
+        <div id="leftcol">
+          <div class="logoarea">
+            <img src="http://cdn.onlinewebfonts.com/svg/img_95202.png" alt="logo" height="50" width="50" />
+            <span id="logo">Company<br> Name</span>
+          </div>
+          <div>
+            <h1>Changing the World <br> <span>On app at a time</span></h1>
+          </div>
+          <div class="btnarea">
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div id="rightcol">
+          <img src="wolf bg2_prev_ui.png" alt="" height="400" width="450">
+        </div>
+      </div>
+    </section>
+    <section id="s2">
+      <div class="container2">
+        <h2>Our Services</h2>
+        <div class="services">
+          <div class="svc_card">
+            <img src="Logo.jpeg" alt="" class="icon" height="50" width="50">
+            <h3>Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, et?</p>
+          </div>
+          <div class="svc_card">
+            <img src="Logo.jpeg" alt="" class="icon" height="50" width="50">
+            <h3>Illo, officiis nisi!</h3>
+            <p>Maxime sed repudiandae nihil sit nam explicabo excepturi officia sapiente.</p>
+          </div>
+          <div class="svc_card">
+            <img src="Logo.jpeg" alt="" class="icon" height="50" width="50">
+            <h3>In, distinctio alias.</h3>
+            <p>Nihil, possimus molestiae? Nemo quae eaque quo fugiat quibusdam ullam.</p>
+          </div>
+        </div>
+    </section>
+    </div>
+    <section id="s3">
+      <div class="container3">
+        <div class="content">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Eaque sapiente beatae rerum similique, ratione esse
+            perspiciatis excepturi laboriosam omnis molestiae dolorem iusto deleniti non totam?</p>
+        </div>
+        <div class="photo">
+          <div class="photo1">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/035/576/056/non_2x/ai-generated-3d-cartoon-character-a-cute-student-boy-isolated-transparent-background-generated-with-ai-png.png"
+              alt="" height="350" width="300">
+          </div>
+          <div class="photo2">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/035/576/042/original/ai-generated-3d-cartoon-character-a-cute-student-boy-isolated-transparent-background-generated-with-ai-png.png"
+              alt="" height="350" width="300">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s4">
+      <div class="para">
+        <p>
+          <strong>Lipsum dolor sit</strong> amet consectetur, adipisicing elit. Facilis quisquam blanditiis modi mollitia ab iste
+          magnam quasi aut magni fugit quae eius, adipisci optio tempore, ipsa quas ea inventore voluptatem totam
+          cupiditate, autem iure dolor deleniti. <strong>Animi aperiam autem fugiat.</strong>
+        </p>
+      </div>
+    </section>
+    <section>section 5</section>
+  </main>
+</body>
+
+</html>
