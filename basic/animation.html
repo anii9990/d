@@ -24,33 +24,68 @@
         .boxes {
             width: 200px;
             height: 200px;
-            background-color: orange; 
+            background-color: rgb(0, 255, 51); 
             display: flex; 
             justify-content: center;
             align-items: center;
             font-size: 1.5rem;
             font-weight: 600;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+            box-shadow: 0 0 10px rgba(orange, alpha); 
             transition: all 0.3s ease; 
         }
         #b1{
-            background-color: aqua;
+            background-color: rgb(0, 255, 81);
             transition: all 300ms linear;
         }
         #b1:hover{
             background-color: blanchedalmond;
             border-radius: 100%; 
+            color: blue; 
+        }
+        
+        #b3{
+            background-color: rgb(71, 229, 98);
+            transition: all 1000ms ease-in-out;  
+        }
+        #b2:hover~ #b3{
+            background-color: rgb(126, 223, 29);
+            transform: scale(1.2) rotate(90 deg);  
+        }
+        /* to and fro animation */
+        @keyframes toandfro {
+                   0%{
+                    transform: translateY(0);
+                    background-color: orange;
+                   }
+                   50%{
+                    transform: translateY(-100px);
+                    scale: .8;
+                   }
+                    100%{
+                        transform: translateY(0px); 
+                        background-color: rgb(255, 255, 255); 
+                    }
+        }
+
+        .boxes:nth-child(6), 
+        .boxes:nth-child(8),
+        .boxes:nth-child(2), 
+        .boxes:nth-child(4),
+        .boxes:nth-child(10),  
+        .boxes:last-child{
+            animation: toandfro 500ms infinite ease-in-out alternate; 
         }
     </style>
-</head>
+</head> 
+
 <body>
    <section class="container">
     <div class="boxes" id="b1">Lorem.</div>
-    <div class="boxes">Suscipit!</div>
-    <div class="boxes">Illo!</div>
-    <div class="boxes">Assumenda.</div>
-    <div class="boxes">Veniam?</div>
+    <div class="boxes" id="b2">Suscipit!</div>
+    <div class="boxes" id="b3">Illo!</div>
+    <div class="boxes" >Assumenda.</div>
+    <div class="boxes animate_animated animate_bounce animate_infinite">Veniam?</div>
     <div class="boxes">Molestiae.</div>
     <div class="boxes">Quos!</div>
     <div class="boxes">Laboriosam?</div>
