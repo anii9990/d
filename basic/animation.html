@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .boxes {
+            width: 200px;
+            height: 200px;
+            background-color: orange; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+            transition: all 0.3s ease; 
+        }
+        #b1{
+            background-color: aqua;
+            transition: all 300ms linear;
+        }
+        #b1:hover{
+            background-color: blanchedalmond;
+            border-radius: 100%; 
+        }
+    </style>
+</head>
+<body>
+   <section class="container">
+    <div class="boxes" id="b1">Lorem.</div>
+    <div class="boxes">Suscipit!</div>
+    <div class="boxes">Illo!</div>
+    <div class="boxes">Assumenda.</div>
+    <div class="boxes">Veniam?</div>
+    <div class="boxes">Molestiae.</div>
+    <div class="boxes">Quos!</div>
+    <div class="boxes">Laboriosam?</div>
+    <div class="boxes">Qui.</div>
+    <div class="boxes">Eos.</div>
+   </section> 
+</body>
+</html>
